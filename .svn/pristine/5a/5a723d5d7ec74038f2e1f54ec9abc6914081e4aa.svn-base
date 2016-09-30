@@ -1,0 +1,177 @@
+[2016-09-28 17:54:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_article_class' doesn't exist
+SELECT * FROM `33hao_article_class` as `article_class`  WHERE  ac_id <= 7 order by ac_sort asc
+[2016-09-28 17:54:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_article' doesn't exist
+SELECT article.article_id,article.ac_id,article.article_url,article_class.ac_code,article.article_position,article.article_title,article.article_time,article_class.ac_name,article_class.ac_parent_id FROM `33hao_article` as `article` left join `33hao_article_class` as `article_class` ON article.ac_id=article_class.ac_id  WHERE  article.article_show = '1' order by article_sort asc,article_time desc limit 300
+[2016-09-28 17:54:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_goods_class' doesn't exist
+SELECT * FROM `33hao_goods_class` ORDER BY gc_parent_id asc,gc_sort asc,gc_id asc 
+[2016-09-28 17:54:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_navigation' doesn't exist
+SELECT * FROM `33hao_navigation` ORDER BY nav_sort 
+[2016-09-28 17:54:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_contract_item' doesn't exist
+SELECT * FROM `33hao_contract_item` ORDER BY cti_sort asc LIMIT 30  
+[2016-09-28 17:54:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_groupbuy' doesn't exist
+SELECT * FROM `33hao_groupbuy` WHERE ( state = '20' ) AND ( start_time < '1475056467' ) AND ( end_time > '1475056467' ) ORDER BY recommended desc LIMIT 4  
+[2016-09-28 17:54:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_cms_special' doesn't exist
+SELECT * FROM `33hao_cms_special` WHERE ( special_type = '2' ) ORDER BY special_id desc LIMIT 2  
+[2016-09-28 17:54:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_link' doesn't exist
+SELECT * FROM `33hao_link` as `link`   order by link_id
+[2016-09-28 17:54:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_p_xianshi_goods' doesn't exist
+SELECT * FROM `33hao_p_xianshi_goods` WHERE ( state = '1' ) AND ( start_time < '1475056467' ) AND ( end_time > '1475056467' ) ORDER BY xianshi_recommend desc LIMIT 6  
+[2016-09-28 17:54:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_brand' doesn't exist
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `33hao_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2016-09-28 17:54:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_evaluate_goods' doesn't exist
+SELECT * FROM `33hao_evaluate_goods` ORDER BY geval_id desc LIMIT 1000  
+[2016-09-28 17:54:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_web' doesn't exist
+SELECT * FROM `33hao_web` WHERE ( web_show = '1' ) AND ( web_page LIKE 'index%' ) ORDER BY web_sort LIMIT 1000  
+[2016-09-28 17:54:28] / ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_seo' doesn't exist
+SELECT * FROM `33hao_seo` 
+[2016-09-28 17:54:35] /mobile/index.php?act=index ( act=index&op=index ) 
+ERR: Db Error: Table 'shopnc.33hao_mb_special_item' doesn't exist
+SELECT * FROM `33hao_mb_special_item` WHERE ( special_id = '0' ) AND ( item_usable = '1' ) ORDER BY item_sort asc LIMIT 1000  
+[2016-09-28 17:54:51] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+SELECT * FROM `33hao_lock` WHERE ( pid = '000000000005' ) LIMIT 1  
+[2016-09-28 17:54:51] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_admin' doesn't exist
+SELECT * FROM `33hao_admin` as `admin`  WHERE  admin_name = 'admin' and admin_password = 'e10adc3949ba59abbe56e057f20f883e'
+[2016-09-28 17:54:51] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+SELECT * FROM `33hao_lock` WHERE ( pid = '00000000005' ) LIMIT 1  
+[2016-09-28 17:54:51] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+SELECT * FROM `33hao_lock` WHERE ( pid = '00000000005' ) LIMIT 1  
+[2016-09-28 17:54:51] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+INSERT  INTO `33hao_lock` (pid,pvalue,expiretime) VALUES ('00000000005','1','1475057090')
+[2016-09-28 17:55:14] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+SELECT * FROM `33hao_lock` WHERE ( pid = '000000000005' ) LIMIT 1  
+[2016-09-28 17:55:14] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_admin' doesn't exist
+SELECT * FROM `33hao_admin` as `admin`  WHERE  admin_name = 'admin' and admin_password = 'e10adc3949ba59abbe56e057f20f883e'
+[2016-09-28 17:55:14] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+SELECT * FROM `33hao_lock` WHERE ( pid = '00000000005' ) LIMIT 1  
+[2016-09-28 17:55:14] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+SELECT * FROM `33hao_lock` WHERE ( pid = '00000000005' ) LIMIT 1  
+[2016-09-28 17:55:14] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+INSERT  INTO `33hao_lock` (pid,pvalue,expiretime) VALUES ('00000000005','1','1475057113')
+[2016-09-28 17:55:36] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+SELECT * FROM `33hao_lock` WHERE ( pid = '000000000005' ) LIMIT 1  
+[2016-09-28 17:55:36] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_admin' doesn't exist
+SELECT * FROM `33hao_admin` as `admin`  WHERE  admin_name = 'admin' and admin_password = '75de08fa7060aed0c1f32b49f5f3102e'
+[2016-09-28 17:55:36] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+SELECT * FROM `33hao_lock` WHERE ( pid = '00000000005' ) LIMIT 1  
+[2016-09-28 17:55:36] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+SELECT * FROM `33hao_lock` WHERE ( pid = '00000000005' ) LIMIT 1  
+[2016-09-28 17:55:36] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+INSERT  INTO `33hao_lock` (pid,pvalue,expiretime) VALUES ('00000000005','1','1475057135')
+[2016-09-28 17:56:33] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+SELECT * FROM `33hao_lock` WHERE ( pid = '000000000005' ) LIMIT 1  
+[2016-09-28 17:56:33] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_admin' doesn't exist
+SELECT * FROM `33hao_admin` as `admin`  WHERE  admin_name = 'admin' and admin_password = 'f25a2fc72690b780b2a14e140ef6a9e0'
+[2016-09-28 17:56:33] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+SELECT * FROM `33hao_lock` WHERE ( pid = '00000000005' ) LIMIT 1  
+[2016-09-28 17:56:33] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+SELECT * FROM `33hao_lock` WHERE ( pid = '00000000005' ) LIMIT 1  
+[2016-09-28 17:56:33] /admin/index.php?act=login&op=login ( act=login&op=login ) 
+ERR: Db Error: Table 'shopnc.33hao_lock' doesn't exist
+INSERT  INTO `33hao_lock` (pid,pvalue,expiretime) VALUES ('00000000005','1','1475057192')
+[2016-09-28 17:59:16] http://localhost/admin/modules/shop/index.php?act=promotion_cou&op=cou_list_xml ( act=promotion_cou&op=cou_list_xml ) 
+ERR: Db Error: Table 'ywj.ywj_p_cou' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_p_cou` LIMIT 1  
+[2016-09-28 17:59:16] http://localhost/admin/modules/shop/index.php?act=promotion_cou&op=cou_list_xml ( act=promotion_cou&op=cou_list_xml ) 
+ERR: Db Error: Table 'ywj.ywj_p_cou' doesn't exist
+SELECT * FROM `ywj_p_cou` ORDER BY id desc LIMIT 0,15  
+[2016-09-28 17:59:20] http://localhost/admin/modules/shop/index.php?act=promotion_book&op=get_book_goods_xml ( act=promotion_book&op=get_book_goods_xml ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT COUNT(*) AS nc_count FROM `ywj_goods` WHERE ( is_book = '1' ) ORDER BY goods_id desc LIMIT 1  
+[2016-09-28 17:59:20] http://localhost/admin/modules/shop/index.php?act=promotion_book&op=get_book_goods_xml ( act=promotion_book&op=get_book_goods_xml ) 
+ERR: Db Error: Unknown column 'is_book' in 'where clause'
+SELECT * FROM `ywj_goods` WHERE ( is_book = '1' ) ORDER BY goods_id desc LIMIT 0,15  
+[2016-09-28 17:59:23] http://localhost/admin/modules/shop/index.php?act=promotion_sole&op=goods_list_xml&store_id= ( act=promotion_sole&op=goods_list_xml ) 
+ERR: Db Error: Table 'ywj.ywj_p_sole_goods' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_p_sole_goods` ORDER BY sole_goods_id asc LIMIT 1  
+[2016-09-28 17:59:23] http://localhost/admin/modules/shop/index.php?act=promotion_sole&op=goods_list_xml&store_id= ( act=promotion_sole&op=goods_list_xml ) 
+ERR: Db Error: Table 'ywj.ywj_p_sole_goods' doesn't exist
+SELECT goods_id FROM `ywj_p_sole_goods` ORDER BY sole_goods_id asc LIMIT 0,15  
+[2016-09-28 18:00:00] /shop/ ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'brand_xbgpic' in 'field list'
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `ywj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2016-09-28 18:00:44] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state = '10' ) AND ( chain_code = '0' ) LIMIT 1  
+[2016-09-28 18:00:44] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state = '30' ) LIMIT 1  
+[2016-09-28 18:00:44] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state IN ('10','20') ) AND ( chain_code > '0' ) LIMIT 1  
+[2016-09-28 18:00:44] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state = '40' ) AND ( delete_state = '0' ) AND ( evaluation_state = '0' ) LIMIT 1  
+[2016-09-28 18:00:55] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state = '10' ) AND ( chain_code = '0' ) LIMIT 1  
+[2016-09-28 18:00:55] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state = '30' ) LIMIT 1  
+[2016-09-28 18:00:55] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state IN ('10','20') ) AND ( chain_code > '0' ) LIMIT 1  
+[2016-09-28 18:00:55] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state = '40' ) AND ( delete_state = '0' ) AND ( evaluation_state = '0' ) LIMIT 1  
+[2016-09-28 18:01:07] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state = '10' ) AND ( chain_code = '0' ) LIMIT 1  
+[2016-09-28 18:01:07] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state = '30' ) LIMIT 1  
+[2016-09-28 18:01:07] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state IN ('10','20') ) AND ( chain_code > '0' ) LIMIT 1  
+[2016-09-28 18:01:07] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state = '40' ) AND ( delete_state = '0' ) AND ( evaluation_state = '0' ) LIMIT 1  
+[2016-09-28 18:01:26] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state = '10' ) AND ( chain_code = '0' ) LIMIT 1  
+[2016-09-28 18:01:26] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state = '30' ) LIMIT 1  
+[2016-09-28 18:01:26] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state IN ('10','20') ) AND ( chain_code > '0' ) LIMIT 1  
+[2016-09-28 18:01:26] /mobile/index.php?act=member_index ( act=member_index&op=index ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` WHERE ( buyer_id = '1' ) AND ( order_state = '40' ) AND ( delete_state = '0' ) AND ( evaluation_state = '0' ) LIMIT 1  
+[2016-09-28 18:04:56] http://localhost/admin/modules/shop/index.php?act=order&op=get_xml ( act=order&op=get_xml ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT COUNT(*) AS nc_count FROM `ywj_orders` LIMIT 1  
+[2016-09-28 18:04:56] http://localhost/admin/modules/shop/index.php?act=order&op=get_xml ( act=order&op=get_xml ) 
+ERR: Db Error: Table 'ywj.ywj_orders' doesn't exist
+SELECT * FROM `ywj_orders` ORDER BY order_id desc LIMIT 0,15  

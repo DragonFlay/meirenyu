@@ -1,0 +1,18 @@
+[2016-09-29 08:56:46] / ( act=index&op=index ) 
+ERR: Db Error: Unknown column 'brand_xbgpic' in 'field list'
+SELECT brand_id,brand_name,brand_pic,brand_xbgpic,brand_tjstore FROM `ywj_brand` WHERE ( brand_recommend = '1' ) AND ( brand_apply = '1' ) ORDER BY brand_sort asc, brand_id desc LIMIT 16  
+[2016-09-29 08:59:54] /admin/index.php?act=common&op=common_operations&type=add&value=system%7Ccache ( act=common&op=common_operations ) 
+ERR: Db Error: Unknown column 'admin_quick_link' in 'field list'
+UPDATE `ywj_admin` AS `admin` SET admin_id = '1', admin_quick_link = 'system|cache'  WHERE  admin_id = '1'
+[2016-09-29 08:59:55] /admin/index.php?act=common&op=common_operations&type=add&value=system%7Ccache ( act=common&op=common_operations ) 
+ERR: Db Error: Unknown column 'admin_quick_link' in 'field list'
+UPDATE `ywj_admin` AS `admin` SET admin_id = '1', admin_quick_link = 'system|cache'  WHERE  admin_id = '1'
+[2016-09-29 08:59:56] /admin/index.php?act=common&op=common_operations&type=add&value=system%7Carea ( act=common&op=common_operations ) 
+ERR: Db Error: Unknown column 'admin_quick_link' in 'field list'
+UPDATE `ywj_admin` AS `admin` SET admin_id = '1', admin_quick_link = 'system|cache,system|area'  WHERE  admin_id = '1'
+[2016-09-29 08:59:58] /admin/index.php?act=common&op=common_operations&type=add&value=system%7Cadmin_log ( act=common&op=common_operations ) 
+ERR: Db Error: Unknown column 'admin_quick_link' in 'field list'
+UPDATE `ywj_admin` AS `admin` SET admin_id = '1', admin_quick_link = 'system|cache,system|admin_log'  WHERE  admin_id = '1'
+[2016-09-29 08:59:59] /admin/index.php?act=common&op=common_operations&type=add&value=system%7Cadmin ( act=common&op=common_operations ) 
+ERR: Db Error: Unknown column 'admin_quick_link' in 'field list'
+UPDATE `ywj_admin` AS `admin` SET admin_id = '1', admin_quick_link = 'system|cache,system|admin'  WHERE  admin_id = '1'
